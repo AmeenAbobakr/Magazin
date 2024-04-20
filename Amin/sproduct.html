@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный Магазин</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <section id="header">
+
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+
+            <ul id="navbar">
+
+                <li><a class="active" href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+                
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    <span id="cartCount">0</span>
+                </div>                
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/1pro.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/1pro.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/7pro.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/6pro.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/4pro.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / T-shirts</h6>
+            <h4>Men's Fashion T-shirt</h4>
+            <h2>$39.99</h2>
+            <select id="size">
+                <option value="0">Select Size</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+                <option value="Small">Small</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <input type="number" value="1" id="quantity">
+            <button class="normal" onclick="addToCart()">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Black Boho Collar Short Sleeve Fabric Floral, Random Print Shirt Embellished Non-Stretch Summer Men Clothing</span>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-close">
+                <i class="far fa-times"></i>
+            </div>
+            <div class="cart-menu">
+                <h1>My Cart</h1>
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+            </div>
+
+            <div class="sidebar--footer">
+                <div class="total--amount">
+                    <h5>Total</h5>
+                    <div id="cartTotal" class="cart-total">$0.00</div>
+
+                </div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="product1" class="section-p1">
+
+        <h2>Feature Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+
+                <img src="img/products/8pro.jpg" alt="">
+                <div class="des">
+                    <span>LR Brand</span>
+                    <h5>Tropical Print Flap Pocket Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4>$49.99</h4>
+
+                </div>
+
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+
+                <img src="img/products/2pro.jpg" alt="">
+                <div class="des">
+                    <span>LR Brand</span>
+                    <h5>Tropical Print Shirt Without Tee</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4>$59.99</h4>
+
+                </div>
+
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+
+                <img src="img/products/3pro.jpg" alt="">
+                <div class="des">
+                    <span>LR Brand</span>
+                    <h5>Men Leaf Print Button Up Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4>$49.99</h4>
+
+                </div>
+
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+            <div class="pro" onclick="window.location.href='sproduct1.html';">
+
+                <img src="img/products/5pro.jpg" alt="">
+                <div class="des">
+                    <span>LR Brand</span>
+                    <h5>Short Sleeve Fabric Tropical Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4>$59.99</h4>
+
+                </div>
+
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+
+        <div class="col">
+
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Площадь Гагарина 1</p>
+            <p><strong>Phone:</strong> +7 938 162 00 34</p>
+            <p><strong>Hours:</strong> 10 - 18, Пон - Субб</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Temrs and Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play Store</p>
+            <div class="row">
+                <img src="img/payment/appstore.png" alt="">
+                <img src="img/payment/googleplaystore.png" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/payment/Credit-Card-Icons.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>@ 2024, LR Brand etc - HTML CSS JS Electronic Store</p>
+        </div>
+
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg =document.getElementsByClassName("small-img");
+
+        smallimg [0].onclick = function () {
+            MainImg.src = smallimg[0].src;
+        }
+
+        smallimg [1].onclick = function () {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg [2].onclick = function () {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg [3].onclick = function () {
+            MainImg.src = smallimg[3].src;
+        }
+
+    </script>
+
+    <script src="alaa.js"></script>
+
+    <script>
+        function addToCart() {
+            var size = document.getElementById("size").value;
+            var quantity = parseInt(document.getElementById("quantity").value);
+
+            if (size !== "0" && quantity > 0) {
+                var cartCount = parseInt(document.getElementById("cartCount").innerText);
+                var cartTotal = parseFloat(document.getElementById("cartTotal").innerText.substring(1));
+                var price = 39.99 * quantity; // You may want to calculate the price based on selected size and other factors
+
+                cartCount += quantity;
+                cartTotal += price;
+
+                document.getElementById("cartCount").innerText = cartCount;
+                document.getElementById("cartTotal").innerText = "$" + cartTotal.toFixed(2);
+
+                // Add the item to the cart menu
+                var cartItems = document.querySelector(".cart-items");
+                var newItem = document.createElement("div");
+                newItem.textContent = "Men's Fashion T-shirt - " + size + " x " + quantity;
+
+                // Add a remove button
+                var removeButton = document.createElement("div");
+                removeButton.innerHTML = '  <i class="fad fa-times" style="--fa-primary-color: #ff0000; --fa-secondary-color: #ff0000;"></i>';
+                removeButton.onclick = function() {
+                    cartCount -= quantity;
+                    cartTotal -= price;
+                    document.getElementById("cartCount").innerText = cartCount;
+                    document.getElementById("cartTotal").innerText = "$" + cartTotal.toFixed(2);
+                    cartItems.removeChild(newItem);
+                 };
+                newItem.appendChild(removeButton);
+
+                cartItems.appendChild(newItem);
+                
+            } else {
+                alert("Please select size and quantity.");
+            }
+
+        }
+
+    </script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const sidebar = document.getElementById("sidebar");
+            const sidebarClose = document.querySelector(".sidebar-close");
+            const checkoutBtn = document.querySelector(".checkout-btn");
+
+            function openSidebar() {
+                sidebar.classList.add("open");
+            }
+
+            function closeSidebar() {
+                sidebar.classList.remove("open");
+            }
+
+            document.querySelector(".cart-icon").addEventListener("click", openSidebar);
+
+            sidebarClose.addEventListener("click", closeSidebar);
+
+            checkoutBtn.addEventListener("click", function() {
+                const cartItems = document.querySelectorAll(".cart-items .cart-item");
+                if (cartItems.length === 0) {
+                    alert("The cart is empty. You need to add items before checkout!");
+                } else {
+                    alert("Your order has been successfully placed.");
+                }
+            });
+        });
+        
+    </script>
+
+</body>
+
+</html>
